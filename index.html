@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down</title>
+
+    <link rel="stylesheet" href="Third_Party/Count_Down/css/flipTimer.css">
+
+    <!-- <script src="jquery-3.6.3.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="Third_Party/Count_Down/js/jquery.flipTimer.js
+    "></script>
+
+</head>
+<body>
+    
+    
+    <h1>CCEE Comming Soon...🎉✨</h1>
+  
+    <div class="flipTimer">
+        
+        <div class="days"></div>
+      
+        <div class="hours"></div>
+      
+        <div class="minutes"></div>
+      
+        <div class="seconds"></div>
+      
+      </div>
+
+    
+    <script>
+        $(document).ready(function() {
+
+        $('.flipTimer').flipTimer({
+
+        direction:'down',
+
+        date:'February 13, 2023 00:00:00',
+
+        callback:function() { alert('times up!'); }
+    });
+
+    });
+
+    </script>
+      
+</body>
+</html>
